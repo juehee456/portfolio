@@ -1,0 +1,46 @@
+
+
+
+ 
+ 
+ 
+ body,ul,li,h1,div,video,h1,img,video,#main_1,#main_2,p,footer,header,h2{margin:0px; padding:0px;} 
+ body{font-family:"Daum_Regular";; } 
+ ul{list-style:none;}
+ a{text-decoration:none; color:#ffffff;}
+
+ 
+ 
+ 
+ 
+ #container{
+ width:100%; padding-top:300px;
+ /*background:url(img/sub7_bg.png) fixed no-repeat bottom right,url(img/sub7_bg2.png) fixed no-repeat top left;*/
+ background:url(../../images/milk_splash_pour_1024x1024_2.png) fixed no-repeat;
+ background-size:100% auto;
+  }
+
+
+ #container>section>h2{margin-bottom:50px;} 
+
+ #container>#list1{width:1050px; height:1000px; margin:0px auto 0px auto;}
+ #container>#list1>ul>li>a{
+ float:left; margin-left:0px; text-align:center;
+ font-size:14px; color:#472600;}
+ #container>#list1>ul>li>a>img{width:350px; height:350px;}
+ 
+ #container>#list2{
+ width:1050px; height:2300px; margin:0px auto;
+ }
+ #container>#list2>h2{padding-top:100px;}
+ #container>#list2>ul>li>a{float:left; margin-left:0px; text-align:center; 
+ font-size:14px; color:#472600;}
+ #container>#list2>ul>li>a>img{width:350px; height:350px;}
+
+  
+ footer{ position:absolute; width:100%; height:100px; top:3500px; left:0px; background:rgba(255,255,255,0.5); z-index:5; text-align:center;}
+ footer>ul>li{float:left; margin-left:15px; margin-top:20px;}
+ footer>ul>li:first-child{margin-left:0px;}
+ footer>ul{display:block;width:165px; height:65px; margin:0px auto;}
+ footer>p{color:#472600; font-size:13px;}
+

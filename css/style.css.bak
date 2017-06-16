@@ -1,0 +1,101 @@
+    @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+
+
+	/* Style for our header texts
+	* ---------------------------------------------------- */
+    h1{font-size:10px; text-indent:-9999px;}
+	  
+    
+	/* Centered texts in each sections
+	* ---------------------------------------------------- */
+	.section{
+		text-align:center;
+	}
+    
+		
+/*------------------section0(visual)-----start------------------------------------*/
+	#section0 .ani{position:relative; top:0px; left:50%; margin-left:-82px;width:164px; height:130px; background:url(../images/linebg.png) center no-repeat;
+	  
+    animation-name:circle;
+	animation-duration:1s;
+	animation-iteration-count:1;
+	animation-timing-function:linear;
+	animation-fill-mode:forwards;
+	}
+	@keyframes circle{
+
+	from{
+	transform:scaleY(1);
+	}
+
+	to{
+	transform:scaleY(4.5);
+	}
+    }
+	
+	#section0{overflow:hidden;}
+	#section0 .hjh{width:70px; position:absolute; top:3%; left:50%; margin-left:-35px; opacity:0;}
+    #section0 .pfimg{ width:164px; height:150px; position:absolute;top:50%; margin-top:-75px; left:50%; margin-left:-120px;}
+	#section0 .circle1{width:10px; height:10px; position:relative; top:-10px; left:50%; margin-left:-5px;}
+	#section0 .circle2{width:10px; height:10px; position:relative; top:10px; left:50%; margin-left:-5px;}
+	#section0 .scroll{width:70px; height:30px;position:absolute; top:90%; left:50%; margin-left:-35px; text-align:center;color:#030303; line-height:25px; opacity:0;}
+	#section0 .scroll > span{display:block; width:7px; margin:4px auto 0;height:1px; background:#030303;}
+
+	
+/*------------------section0(visual)-----end---------------------------------------------*/
+
+/*------------------section1(visual)-----start-------------------------------------------*/
+
+	#section1 h2{font-size:48px; margin-top:50px;}
+	#section1 h2 > span{width:40px; border-bottom:2px solid #00ccff; padding-top:20px; margin:0 auto; display:block;}
+	#section1 .fp-tableCell{ vertical-align:top;}
+	#section1 .wrap{width:1200px; height:100%; margin:0 auto; }
+	#section1 .about{width:48%; height:42%; margin-top:2%; float:left;  border:1px solid #afafaf; }
+	#section1 .about > div{padding-top:50px; font-size:20px; line-height:2; font-family:"NanumSquare";}
+	#section1 .career{width:48%; height:42%; margin-top:2%; float:right; border:1px solid #afafaf; margin-bottom:3%; }
+	#section1 .career > div{padding-top:50px; font-size:20px; line-height:2; font-family:"NanumSquare";}
+    #section1 .skill{clear:both; width:100%; height:43%; margin-top:5%; border:1px solid #afafaf; overflow:hidden;}
+	#section1 .skill > div{float:left;  width:20%; margin-top:30px; overflow:hidden;}
+    #section1 .skill > div > div{width:120px; margin:0 auto;}
+	#section1 .skill > div > div > strong{font-size:20px;position:relative; top:-70px; left:0px;}
+	
+/*------------------section1(visual)-----end-------------------------------------------*/
+	
+/*------------------section2(visual)-----start----------------------------------------*/	
+	
+	
+    #section2 h1{text-indent:0px; color:#ffffff;}
+    #section2 #hexGrid p{font-family:"NanumSquare"; font-size:25px;}
+
+/*------------------section2(visual)-----end-------------------------------------------*/  
+
+/*------------------section3(visual)-----start-----------------------------------------*/		
+	
+	#section3 .wrap{width:1200px; height:100%; margin:0 auto; overflow:hidden;}
+	#section3 h2{font-size:53px; margin-top:10%; margin-bottom:18%;}
+	#section3 h2 > span{width:7%; border-bottom:2px solid #00ccff; padding-top:20px; margin:0 auto; display:block;}
+	#section3 h3{font-size:30px; margin-bottom:10%;}
+	#section3 img{margin-bottom:8%;}
+	#section3 .mail{width:33.333%; float:left;}
+	#section3 .mail > img{width:35%;}
+	#section3 .phone{width:33.333%;float:left;}
+	#section3 .phone > img{width:38%;margin-bottom:6%;}
+	#section3 .kakao{width:33.333%;float:left;}
+    #section3 .kakao > img{width:35%;}
+	#section3 .wrap > div > span{display:block; font-size:25px; margin-bottom:45%;}
+	#section3 p{clear:both; display:block;padding-top:30px; border-top:1px solid #afafaf; font-size:13px; }
+	
+/*------------------section3(visual)-----end-------------------------------------------*/ 	
+	
+	
+	
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #030303;
+	}
+	
+	
+	.active{background:#fefefe;}
+	

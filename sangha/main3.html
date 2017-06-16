@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript"> 
+
+  $(function(){
+  var num=0;
+  
+  $('#wrap>ul>li').on('click',function(){
+  $(this).find('[class*=full]').toggle();
+  if($(this).find('[class*=full]').css('display')=='block'){num++;}else{num--;}
+  
+  $('.choji1').text(num);
+  });
+  $('#wrap').show();
+   $('#wrap2').hide();
+   
+   $('.bottomwrap>a').on('click',function(event){
+	   event.preventDefault();
+  
+   $('#wrap').hide();
+   $('#wrap2').show();
+   $('.choji2').text(num*28);
+  
+   });
+ $('#wrap2>a').on('click',function(event){
+	event.preventDefault();
+   $('#wrap>ul>li').find('[class*=full]').css('display','none');
+   $('#wrap').show();
+   $('#wrap2').hide();
+ });
+  });
+  
+  
+  
+
+  
+  
+  
+ </script>
+ <style type="text/css">
+ body,section,h1,h2,h3,p,ul,li,img,a{margin:0px; padding:0px;}
+ ul{list-style:none;}
+ a{text-decoration:none;}
+ img{border:none;}
+ 
+ #wrap{width:600px; height:600px; text-align:center; margin:0px auto; border:1px solid #030303;}
+ #wrap>.topwrap{width:600px; height:270px;color:#472600; font-size:11pt;font-family:daum regular;}
+ #wrap>.topwrap>h3{padding:70px 0 40px 0px; font-size:15pt; line-height:2em;}
+ #wrap>ul{width:540px; height:100px; margin:0px auto; display:block;}
+ #wrap>ul>li{position:relative; top:0px; left:0px; width:100px; height:100px; float:left; margin-left:10px;}
+ #wrap>ul>li:first-child{margin-left:0px;}
+ #wrap>ul>li>img[class*=full]{position:absolute; top:0px; left:0px; z-index:5; display:none;  width:100px; height:100px; }
+ #wrap>ul>li>img[class*=empty]{position:absolute; top:0px; left:0px;  width:100px; height:100px; }
+ #wrap>.bottomwrap{width:600px; height:600px; text-align:center;color:#472600; font-family:daum regular;}
+ #wrap>.bottomwrap>p{padding:60px 0px 40px 0px;}
+ #wrap>.bottomwrap>a{padding:0px}
+ 
+ 
+ #wrap2
+  {width:600px; height:600px; margin:0px auto;
+  background:url(images/choji_popup_bg.jpg) no-repeat;
+  background-position:top left;
+  background-size:600px 600px;
+  overflow:hidden;
+  text-align:center;
+  position:relative;
+  }
+  #wrap2>p{margin:220px 0 100px 0; font-family:daum regular; font-size:19pt; color:#ffffff; padding:0 20px; 
+  text-align:center; line-height:40px; letter-spacing:-1px;   text-shadow:2px 2px 8px rgba(189,189,189,0.7);}
+  #wrap2>p>span{font-size:24pt;}  
+  
+  #wrap2>a{width:160px; height:40px; padding-top:50px;}
+  #wrap2>a>img{width:160px; height:40px;}
+ 
+ </style>
+ </head>
+ <body>
+   <div id="wrap">
+     <div class="topwrap">
+	 <h3>고객님이 드신 상하목장 유기농 우유가 어느 정도의<br>유기농 초지를 조성하게 되었는지 알아보세요.</h3>
+	 <p>Question. 고객님께서 일주일 동안 마시는 우유( 750ml 기준 )는 몇 병 이신가요?</p>
+	 </div>
+	 <ul>
+     	<li class="glass1"><img src="images/icon/chojiempty.png" alt="" class="empty1"><img src="images/icon/choji.png" alt="" class="full1"></li>
+     	<li class="glass2"><img src="images/icon/chojiempty.png" alt="" class="empty2"><img src="images/icon/choji.png" alt="" class="full2"></li>
+     	<li class="glass3"><img src="images/icon/chojiempty.png" alt="" class="empty3"><img src="images/icon/choji.png" alt="" class="full3"></li>
+     	<li class="glass4"><img src="images/icon/chojiempty.png" alt="" class="empty4"><img src="images/icon/choji.png" alt="" class="full4"></li>
+     	<li class="glass5"><img src="images/icon/chojiempty.png" alt="" class="empty5"><img src="images/icon/choji.png" alt="" class="full5"></li>
+     </ul>
+	 <div class="bottomwrap">
+	 <p>총 <span class="choji1">0</span>병을 선택하셨습니다.</p>
+	 <a href="main3_choji_popup.html"><img src="images/choji_button.png" alt=""></a>
+	 </div>
+   </div>
+    
+	
+  <div id="wrap2">
+    <p><span>고</span>객님의 <span>상하목장</span> 제품 구매로 인해
+    <span class="choji2">0</span>㎡의 <br>유기농 <span>초지</span>가 가꾸어 지고 있는 것 입니다<br>
+
+    <span>유기농</span>의 착한 혁명에 함께 해 주셔서 감사합니다. </p>
+	
+	
+	<a href="#"><img src="images/main3_choji_popup_button.png" alt="다시계산해보기버튼"></a>
+  </div>
+ 
+ </body>
+</html>

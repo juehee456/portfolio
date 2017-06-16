@@ -1,0 +1,102 @@
+
+ body,ul,li,h1,div,video,h1,img,video,#main_1,#main_2,p,footer,header,h2{margin:0px; padding:0px;} 
+ ul{list-style:none;}
+ a{text-decoration:none; color:#ffffff;}
+ h2{text-indent:-9999px; overflow:hidden;}
+ body{display:block; font-family:"Daum_Regular"; }
+ img{border:none;}
+
+ 
+@font-face{
+font-family:"Daum_Regular";
+src:url(Daum_Regular.woff);
+src:local(※), url(Daum_Regular.woff) format(‘woff’);
+}
+
+
+
+ 
+ 
+ 
+
+.embed-container{position:relative; padding-bottom:56.25%; height:0; overflow: hidden; width:100%; margin:0 auto;}
+.embed-container iframe{border:1px solid #ccc}
+.embed-container iframe, .embed-container object, .embed-container embed {position: absolute; top: 0; left: 0; width:100%; height: 100%;}
+
+ 
+#main_1{width:100%; margin:0px; padding:0px; overflow:hidden; position:relative; top:0px; left:0px;}
+ 
+
+
+
+
+
+ 
+ #main_2{width:100%; height:1000px;
+ background:url("images/main_2.jpg") 100% no-repeat;
+ background-position: center top; 
+ background-size:100% 1000px;
+ }
+ #main_2>p{color:#ffffff; font-size:30px; margin:100px 250px 0px 0px; float:right; display:none;}
+ #main_2>.iconbox{position:relative; top:350px; left:0px; width:100%; height:300px; background:rgba(255,255,255,0.5);}
+ #main_2>.iconbox>ul{position:absolute; top:80px; left:50%; margin-left:-400px; width:800px; height:170px;}
+ #main_2>.iconbox>ul>li{float:left; margin-left:180px; text-align:center; font-family:"Daum_Regular";}
+
+ 
+  
+ #main_2{width:100%; height:1000px; 
+ background:url("../images/main_2.jpg") 100% no-repeat;
+ background-position: center top; 
+ background-size:100% 1000px;
+ }
+ #main_2>p{color:#ffffff; font-size:30px; margin:100px 250px 0px 0px; float:right;}
+ #main_2>.iconbox{position:relative; top:350px; left:0px; width:100%; height:300px; background:rgba(255,255,255,0.5);}
+ #main_2>.iconbox>ul{position:absolute; top:80px; left:50%; margin-left:-400px; width:800px; height:170px;}
+ #main_2>.iconbox>ul>li{position:relative; top:0px; left:0px; overflow:hidden;float:left; margin-left:180px; text-align:center; font-family:"Daum_Regular"; opacity:1;}
+ #main_2>.iconbox>ul>li:first-child{margin-left:0px;}
+ #main_2>.iconbox>ul>li>a>img{margin-bottom:5px;}
+ #main_2>.iconbox>ul>li>a>p{padding-top:10px; border-top:1px solid rgba(255,255,255,0.5);}
+ 
+ #main_3{width:100%; height:950px; 
+ background:url("../images/main_3_bg.jpg") 100% no-repeat;
+ background-position: center bottom; 
+ background-size:100% 950px;
+ }
+ #main_3>img{display:block; margin:0px auto;}
+ #main_3>a{width:300px; height:40px; display:block; margin:0px auto;}
+ #main_3>.main_3_img1{padding-top:150px;} 
+ #main_3>.main_3_img2{padding-top:100px;}
+ #main_3>a>.main_3_img3{padding-top:100px;}
+
+ footer{ position:absolute; width:100%; height:100px; top:2850px; left:0px; background:rgba(255,255,255,0.5); z-index:5; text-align:center;}
+ footer>ul>li{float:left; margin-left:15px; margin-top:20px;}
+ footer>ul>li:first-child{margin-left:0px;}
+ footer>ul{display:block;width:165px; height:65px; margin:0px auto;}
+ footer>p{color:#472600; font-size:13px;}
+
+ #main_2>.iconbox>ul>li:first-child{margin-left:0px;}
+ #main_2>.iconbox>ul>li>a>img{margin-bottom:5px;}
+ #main_2>.iconbox>ul>li>a>p{padding-top:10px; border-top:1px solid rgba(255,255,255,0.5);}
+ 
+ #main_3{width:100%; height:950px; 
+ background:url("../images/main_3_bg.jpg") 100% no-repeat;
+ background-position: center bottom; 
+ background-size:100% 950px;
+ }
+ #main_3 div{margin:0px auto;}
+ #main_3>a{width:300px; height:40px; display:block; margin:0px auto;}
+ 
+ #main_3>.main_3_1{margin-top:100px; width:768px; height:244px; position:relative; top:0px; left:0px; opacity:1;}
+ #main_3>.main_3_1>.main_3_img1{width:768px; height:244px;} 
+ 
+ #main_3>.main_3_2{margin-top:80px; width:120px; height:99px; position:relative;  top:0px; left:0px; opacity:1;}
+ #main_3>.main_3_2>.main_3_img2{width:120px; height:99px;}
+ 
+ #main_3>.main_3_3{margin-top:80px; width:306px;  height:44px; position:relative; top:0px; left:0px; opacity:1;}
+ #main_3>.main_3_3>a>.main_3_img3{width:306px;  height:44px;}
+
+ footer{ position:absolute; width:100%; height:100px; top:2824px; left:0px; background:rgba(255,255,255,0.5); z-index:5; text-align:center;}
+ footer>ul>li{float:left; margin-left:15px; margin-top:20px;}
+ footer>ul>li:first-child{margin-left:0px;}
+ footer>ul{display:block;width:165px; height:65px; margin:0px auto;}
+ footer>p{color:#472600; font-size:13px;}

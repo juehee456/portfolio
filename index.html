@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HAM PORTFOLIO</title>
+	<meta name="author" content="ham" />
+	<meta name="description" content="" />
+	<meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/examples.css">
+	<link rel="stylesheet" type="text/css" href="css/hexagons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/circle-progress.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page']
+			});
+		});
+	
+	
+	
+    $(document).ready(function(){
+	 
+	 
+	    
+	  
+	  $('.circle1').animate({'margin-top':'-299px'},1100,'linear');
+	  $('.circle2').animate({'margin-top':'289px'},1100,'linear');
+	  $('.hjh').delay(1150).animate({opacity:1},300);
+	  $('.scroll').delay(1150).animate({opacity:1},300);
+
+
+ $('#section0,#section2').on ('mousewheel',function(event){
+		
+		
+  $('.firstcircle').circleProgress({
+      value: 0.62,
+	  size:120,
+    fill: {gradient: ['#9ad2cb', '#9ad2cb']}
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(62 * progress) + '<i>%</i>');
+  });
+ 
+  $('.secondcircle').circleProgress({
+    value: 0.76,
+	size:120,
+    fill: {gradient: ['#9ad2cb', '#9ad2cb']}
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(76 * progress) + '<i>%</i>');
+  });
+
+  
+  $('.thirdcircle').circleProgress({
+       value: 0.64,
+	   size:120,
+    fill: {gradient: ['#9ad2cb', '#9ad2cb']}
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(64 * progress) + '<i>%</i>');
+  });
+    $('.fourthcircle').circleProgress({
+       value: 0.73,
+	   size:120,
+    fill: {gradient: ['#9ad2cb', '#9ad2cb']}
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(73 * progress) + '<i>%</i>');
+  });
+    $('.fifthcircle').circleProgress({
+       value: 0.35,
+	   size:120,
+    fill: {gradient: ['#9ad2cb', '#9ad2cb']}
+  }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(Math.round(35 * progress) + '<i>%</i>');
+  });
+ });
+});
+	</script>
+
+
+
+
+</head>
+<body>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>page1</h1>
+			<div class="hjh"><img src="images/hjh2.png" alt=""></div>
+			<div class="circle1"><img src="images/circle.png" alt=""></div>
+			<div class="ani"></div> <div class="pfimg"><img src="images/portfoliotext.png" alt=""></div>
+			<div class="circle2"><img src="images/circle.png" alt=""></div>
+			<div class="scroll">scroll<span></span>down</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	  <div class="wrap">
+		<div class="about"><h2>ABOUT ME<span></span></h2><div>함주희<br>1991.10.25<br>juehee456@naver.com<br>010.7799.1461</div></div>
+		<div class="career"><h2>CAREER<span></span></h2><div><span></span>인트랜드 외주팀 1년[의상]<br><span></span>울랄라컴퍼니 3년[의상]<br><span></span>NCS UI/UX Design[수료]</div></div>
+	
+	<div class="skill"><h2>SKILL<span></span></h2>
+			<div class="skill1"><div class="firstcircle"><strong>62</strong></div>Web_Standard</div>
+			<div class="skill2"><div class="secondcircle"><strong>76</strong></div>HTML5 & CSS3</div>
+			<div class="skill3"><div class="thirdcircle"><strong>64</strong></div>jQuery</div> 
+			<div class="skill4"><div class="fourthcircle"><strong>73</strong></div>Photoshop</div>
+			<div class="skill5"><div class="fifthcircle"><strong>35</strong></div>Illustrator</div>
+		</div>
+	  </div>
+	  
+	</div>
+	
+	
+	<div class="section" id="section2">
+		
+			
+	 <ul id="hexGrid">
+      <li class="hex">
+        <div class="hexIn" class="box1">
+          <a class="hexLink" href="sangha/index.html" target="_blank">>
+            <img src="images/sangha1.jpg" alt="" />
+            <h1>SANGHA'S FARM</h1>
+            <p>유제품 브랜드 상하목장<br>웹페이지 리뉴얼</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn" class="box2">
+          <a class="hexLink" href="vespa/index.html" target="_blank">
+            <img src="images/vespa3.jpg" alt="" />
+            <h1>VESPA</h1>
+            <p>베스파 웹페이지 리뉴얼<br> / 반응형 웹페이지</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn" class="box3">
+          <a class="hexLink" href="sajo/index.html" target="_blank">
+            <img src="images/sajo4.jpg" alt="" />
+            <h1>SAJO GUROUP</h1>
+            <p>기업 사조그룹 웹표준<br>/ 웹페이지 리뉴얼 </p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn" class="box4">
+          <a class="hexLink" href="dentist/index.html" target="_blank">
+            <img src="images/dent4.jpg" alt="" />
+            <h1>DENTAL CLINIC</h1>
+            <p>잎사귀 치과 리뉴얼 <br> / 반응형 웹페이지</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn" class="box5">
+          <a class="hexLink" href="creamcheese/index.html" target="_blank">
+            <img src="images/cream2.jpg" alt="" />
+            <h1>CREAM CHEESE</h1>
+            <p>필라델피아 크림치즈 <br>프로모션 사이트 구축</p>
+          </a>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn" class="box6">
+          <a class="hexLink" href="nars/index.html" target="_blank">
+            <img src="images/nars3.jpg" alt="" />
+            <h1>NARS</h1>
+            <p>코스메틱브랜드 나스<br> 웹페이지 리뉴얼</p>
+          </a>
+        </div>
+      </li>
+	  <li class="hex">
+        <div class="hexIn" class="box7">
+          <a class="hexLink" href="webzin/index.html" target="_blank">
+            <img src="images/cd2.jpg" alt="" />
+            <h1>WEBZIN</h1>
+            <p>힙합 웹진 HIPHOPLAYA<br>웹페이지 구축</p>
+          </a>
+        </div>
+      </li>
+     </ul>
+	</div>
+
+	<div class="section" id="section3">
+	<div class="wrap">
+	  <h2>CONTACT<span></span></h2>
+	  <div class="mail"><h3>MAIL</h3><img src="images/mail.png" alt=""><span>juehee456@naver.com</span></div>
+	  <div class="phone"><h3>CELLPHONE</h3><img src="images/phone.png" alt=""><span>010.7799.1461</span></div>
+	  <div class="kakao"><h3>KAKAOTALK</h3><img src="images/kakao.png" alt=""><span>juehee456</span></div>
+	  
+	  <p>Copyright &copy; copy2017 BY HamJooHee CO ,LTD. ALL RESERVED</p>
+	</div>
+   </div>
+   
+</div>
+
+
+</body>
+</html>

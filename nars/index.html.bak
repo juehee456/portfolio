@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" style="text/css" href="css/style.css" >
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/prefixfree.min.js"></script>
+ 
+  <title>NARS</title>
+  <script type="text/javascript">
+   
+   var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+   for (var word in mobileKeyWords){
+     if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+         location.href = "http://juehee456.dothome.co.kr/mobile/index.html";
+         break;
+     }  
+  }
+
+  $(function(){
+  $('.new').on('mouseenter',function(){
+  $('.m1').stop().slideDown(); 
+  $('.m2,.m3,.m4,.m5,.m6').hide();
+  });
+  $('.new').on('mouseleave',function(){
+  $('.m1').stop().slideUp(); 
+  });
+
+  $('.bs').on('mouseenter',function(){
+  $('.m2').stop().slideDown(); 
+  $('.m1,.m3,.m4,.m5,.m6').hide();
+  });
+  $('.bs').on('mouseleave',function(){
+  $('.m2').stop().slideUp(); 
+  });
+
+  $('.mu').on('mouseenter',function(){
+  $('.m3').stop().slideDown(); 
+  $('.m1,.m2,.m4,.m5,.m6').hide();
+  });
+  $('.mu').on('mouseleave',function(){
+  $('.m3').stop().slideUp(); 
+  });
+ 
+  $('.sc').on('mouseenter',function(){
+  $('.m4').stop().slideDown(); 
+  $('.m1,.m2,.m3,.m5,.m6').hide();
+  });
+  $('.sc').on('mouseleave',function(){
+  $('.m4').stop().slideUp(); 
+  });
+
+  $('.event').on('mouseenter',function(){
+  $('.m5').stop().slideDown(); 
+  $('.m1,.m2,.m3,.m4,.m6').hide();
+  });
+  $('.event').on('mouseleave',function(){
+  $('.m5').stop().slideUp(); 
+  });
+
+  $('.an').on('mouseenter',function(){
+  $('.m6').stop().slideDown(); 
+  $('.m1,.m2,.m3,.m4,.m5').hide();
+  });
+  $('.an').on('mouseleave',function(){
+  $('.m6').stop().slideUp(); 
+  
+  });
+  $('.header_nav>ul>li:last-child,.header_nav>div').hover(function(){
+  $('.header_nav>div').show();
+
+   },function(){
+    if($('.header_nav>div>input').focus()){
+    $('.header_nav>div').show();
+    }else{
+	$('.header_nav>div').hide();
+	}
+   }); 
+	
+	
+	
+  $('body').on('click',function(){
+  $('.header_nav>div').hide(); 
+ 
+	});
+  
+  function slideposter(){
+		var imgs=$('.slides').find('img');
+		var first=imgs.eq(0);
+		var second=imgs.eq(1);
+		second.fadeIn(400);
+		first.fadeOut(400,function(){ 
+		  $('.slides').append(first);
+		});
+    }
+
+	function slideposterback(){
+		var imgs=$('.slides').find('img');
+		var first=imgs.eq(0);
+		var second=imgs.eq(2);
+		second.fadeIn(400);
+		first.fadeOut(400,function(){   
+		  $('.slides').prepend(second);
+		});
+    }
+	
+	var timer=setInterval(slideposter, 2000);
+	setInterval(timer,2000);
+    
+	$('.slides,.prev,.next').on('mouseenter',function(){
+		clearInterval(timer,2000);
+	
+	});
+	
+	$('.slides,.prev,.next').on('mouseleave',function(){
+		timer=setInterval(slideposter,2000);
+
+    });
+    
+	  
+	$('.next').on('click',function(event){
+		event.preventDefault();
+			
+		    });
+	 $('.next').click(function(){
+	    slideposter();
+	  });
+
+	  $('.prev').on('click',function(event){
+		event.preventDefault();
+		  
+		});
+	  $('.prev').click(function(){
+	    slideposterback();
+      
+	  });
+
+  }); 
+
+ </script>
+
+ </head>
+ <body>
+   <header>
+   <div id="main_header">
+   <h1><a href="index.html"><img src="images/Header_logo.png" alt="나스검정색로고"></a></h1>
+   <nav class="header_nav">
+      <ul>
+      	<li><a href="">JOIN</a></li>
+      	<li><a href="">LOG-IN</a></li>
+      	<li><a href="">SEARCH</a></li>
+      </ul>
+	  <div><input type="search" id="search" value=""><a href="#"><img src="images/search_black.png"  alt=""></a></div>
+   </nav>
+   <nav class="main_nav">
+    <ul>
+    	<li  class="new"><a href="#">NEW</a>
+		     <div class="m1">
+				<div class="line"></div>
+				 <ul>
+			        <li><a href="#">Just Arrived</a><li>
+				    <li><a href="#">Sarah Moon Collection </a><li>
+					<li><a href="#">Velvet Lip Glide </a><li>
+				</ul>
+				<img src="images/new.jpg" alt="">
+		    </div>
+		</li>
+    	<li  class="bs"><a href="#">BEST SELLER</a>
+		    <div class="m2">
+			<div class="line"></div>
+			<ul>
+			  <li><a href="sub1/sub1.html">Best Sellers<br>Award Winners</a></li>	
+			</ul>
+			<img src="images/bestseller.jpg" width="200" height="200" alt="">
+            </div>
+		</li>
+    	<li class="mu"><a href="#">MAKE UP</a>
+		      <div class="m3">
+				 <div class="line"></div>
+				 <ul>
+			        <li><strong>Lips</strong>
+					   	<ul>
+					   		<li><a href="#">Lipstick</a></li>
+					   		<li><a href="#">Lip Gloss</a></li>
+					   		<li><a href="#">Lip Pencils</a></li>
+					   		<li><a href="#">Lip Brushes</a></li>
+					   	</ul>
+					  </li>
+  				    <li><strong>Cheeks</strong>
+					   	<ul>
+					   		<li><a href="">Blush</a></li>
+					   		<li><a href="">Bronzer</a></li>
+					   		<li><a href="">Multi-Use</a></li>
+					   		<li><a href="">Cheek Brushes</a></li>
+					   	</ul>
+					</li>
+					<li><strong>Face</strong>
+			    		 <ul>
+					   		<li><a href="#">Foundation</a></li>
+					   		<li><a href="#">Concealer</a></li>
+					   		<li><a href="#">Primer</a></li>
+					   		<li><a href="#">Powder</a></li>
+							<li><a href="#">Face Brushes</a></li>
+					   	</ul>
+					</li>
+                    <li><strong> Eyes</strong>
+					   <ul>
+                            <li><a href="#">Eyeshadow</a></li>
+					   		<li><a href="#">Eyeliner</a></li>
+					   		<li><a href="#">Mascara</a></li>
+					   		<li><a href="#">Brow</a></li>
+							<li><a href="#">Brushes & Tools</a></li> 
+							<li><a href="#">Eye Palettes</a></li> 
+                           </ul>
+					</li>
+					<li><strong> Multi-Use</strong>
+						  <ul>
+                            <li><a href="#">Multiple</a></li>
+					   		<li><a href="#">Illuminator</a></li>
+					   		<li><a href="#">Body Glow</a></li>
+					   	  </ul>
+					</li>
+				</ul>
+				<img src="images/makeup.jpg" width="200" height="200" alt="">
+		    </div>
+		
+		</li>
+    	<li class="sc"><a href="#">SKIN CARE</a>
+		    <div class="m4">
+			<div class="line"></div>
+			<ul>
+			  <li><a href="#">Cleansers</a></li>
+			  <li><a href="#">Toner & Exfoliator</a></li>
+			  <li><a href="#">Serum</a></li>
+			  <li><a href="#">Moisturizers</a></li>
+			  <li><a href="#">Specialty Treatment</a></li>
+			</ul>
+			<img src="images/narsskin.JPG" width="200" height="200" alt="">
+            </div>
+		</li>
+    	<li class="event"><a href="#">EVENT</a>
+		    <div class="m5">
+			<div class="line"></div>
+			<ul>
+			  <li><a href="#">Make Up Your Mind</a></li>
+			  <li><a href="#">Special Event Now</a></li>
+			</ul>
+			<img src="images/event2.jpg" width="200" height="200" alt="">
+            </div>
+		</li>
+    	
+		<li class="an"><a href="#">ABOUT NARS</a>
+		  <div class="m6">
+			<div class="line"></div>
+			<ul>
+			  <li><a href="#">Customer Service</a></li>
+			  <li><a href="#">Careers</a></li>	
+			  <li><a href="#">About FRANÇOIS NARS</a></li>	
+			</ul>
+			<img src="images/bestseller3.jpg" width="200" height="200" alt="">
+            </div>
+		</li>
+    </ul>
+	</nav>
+	</div>
+   </header>
+   <section id="content">
+     <div class="video_box"><video width="1000" height="563" autoplay loop >
+     <source src="video/visual.mp4"></video></div>
+     </section>
+   
+   <section id="content2">
+	  <div class="slide_box">
+	   <div class="slides">
+		<img src="images/velvet2.jpg" alt="" class="img1">
+		<img src="images/rita.png" alt="" class="img2">
+		<img src="images/sarah.png" alt="" class="img3">
+	    
+	   </div>
+		<a href="#" class="prev"><img src="images/prev.png" alt=""/></a>
+	    <a href="#" class="next"><img src="images/next.png" alt=""/></a>
+        <button type="button"><img src="images/jshlineblack.png" alt=""></button> 
+	  </div>
+   </section>
+  
+   <footer>
+   <div></div>
+   <div id="main_footer">
+   <p>이용약관</p>
+   <p>개인정보보호정책</p>
+   <p>&copy; 2017 NARS Cosmetics.
+     All Rights Reserved.</p>
+   </div>
+   </footer>
+ </body>
+</html>

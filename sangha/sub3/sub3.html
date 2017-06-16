@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>상하목장의 히스토리</title>
+  <link rel="shortcut icon" href="../images/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/sangha_sub3.css">
+  <link rel="stylesheet" type="text/css" href="../css/header.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="../../js/jquery.waterwheelCarousel.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../../js/jquery.mousewheel.js"></script>
+  <script type="text/javascript"> 
+  
+  $(function(){
+  
+  $('header>nav>ul>li').on('mouseenter',function(){
+  $('header>.nav_bg, header>nav>ul>li>ul>li>a').stop().fadeIn();
+  
+  });
+   $('header>nav>ul>li,header>.nav_bg').on('mouseleave',function(){
+  $('header>.nav_bg,header>nav>ul>li>ul>li>a').stop().fadeOut();
+  });
+  });
+  $(document).ready(function () {
+  
+  $("#waterwheel-carousel").waterwheelCarousel({
+    horizon: 300,
+    horizonOffset: 150,
+    horizonOffsetMultiplier: .7,
+    separation: 400,
+    edgeFadeEnabled: true
+  });
+   var pageNum=1;
+	   var wheelChk=true;
+	    $('html,body').on ('mousewheel',function(event){
+			event.preventDefault();
+			if(wheelChk){
+				wheelChk=false;
+				if(event.deltaY<0){
+						pageNum++;
+						if(pageNum>=2){ pageNum=2;}
+				}else{
+					pageNum--;
+					if(pageNum<=1){ pageNum=1;}
+				}
+			}
+			$('html,body').stop().animate({scrollTop:$('#container'+pageNum).offset().top},800,function(){ wheelChk=true; });
+		})
+
+
+ $('#container1>h2').delay(200).fadeIn();
+ });
+        
+
+  
+  </script>
+ 
+ 
+
+ </head>
+ <body>
+ 
+ 
+ 
+ <header>
+  <h1><a href="../index.html"><img src="../images/logo.png" alt="상하목장로고"></a></h1>
+  <nav>
+  <ul>
+   <li><a href="../sub1/sub1.html">ABOUT</a>
+     <ul>
+     	<li><a href="../sub1/sub1.html">상하목장의 원칙</a></li>
+     	<li><a href="../sub2/sub2.html">상하목장의 철학</a></li>
+		<li><a href="../sub3/sub3.html">상하목장의 히스토리</a></li>
+     </ul>
+   </li>
+   <li><a href="../sub4/sub4.html">ORGANIC CIRCLE</a>
+      <ul>
+     	<li><a href="../sub4/sub4.html">오가닉 써클 캠페인</a></li>
+     	<li><a href="../sub5/sub5.html">캠페인 참여하기</a></li>
+	  </ul>  
+   </li>
+   <li><a href="../sub7/sub7.html">PRODUCT</a>
+      <ul>
+      	<li><a href="../sub7/sub7.html">저온살균 제품</a></li>
+      	<li><a href="../sub7/sub7.html.#list2">유기농 제품</a></li>
+      </ul>
+   </li>
+   <li><a href="../sub8/sub8.html">STORE</a>
+      <ul>
+      	<li><a href="../sub8/sub8.html">sangha's<br>milk ice cream</a></li>
+      	<li><a href="../sub9/sub9.html">매장 안내</a></li>
+      </ul>  
+   </li>
+   <li><a href="../sub10/sub10.html">NOTICE</a>
+      <ul>
+      	<li><a href="../sub10/sub10.html">뉴스</a></li>
+      	<li><a href="../sub11/sub11.html">이벤트</a></li>
+      </ul>  
+   </li>
+  </ul>	
+  </nav>
+  <div class="nav_bg"></div>
+  </header>
+  
+  
+  
+  <section id="container1">
+    <h2><img src="../images/sub3_h2.png" alt=""></h2>
+  </section>
+  <section id="container2">
+	<h3><span>유기농</span>의 착한 <span>혁명</span><br><span class="title">상하목장의 시작 이야기</span></h3>
+  
+	<div id="waterwheel-carousel">
+	  <div class="waterwheel-carousel1"><a href="https://www.youtube.com/embed/6-Z22ZnRrPs"><img src="../images/sub3_slide1.png" alt="" ></a></div><!--<iframe width="855" height="510" src="https://www.youtube.com/embed/6-Z22ZnRrPs" frameborder="0" allowfullscreen></iframe>-->
+	   <div class="waterwheel-carousel2"><a href="https://www.youtube.com/embed/HVg2Xd2nWOE"><img src="../images/sub3_slide2.png" alt=""></a></div><!--<iframe width="855" height="510" src="https://www.youtube.com/embed/HVg2Xd2nWOE" frameborder="0" allowfullscreen></iframe>-->
+	   <div class="waterwheel-carousel3"><a href="https://www.youtube.com/embed/8uLxBEI7by4"><img src="../images/sub3_slide3.png" alt=""></a></div><!--<iframe width="855" height="510" src="https://www.youtube.com/embed/8uLxBEI7by4" frameborder="0" allowfullscreen></iframe>-->
+	
+	
+
+	</div>
+   </section>
+
+    <footer>
+    <ul>
+    	<li><a href="#"><img src="../images/icon/sns_facebook.png" width="30" height="30" alt="페이스북 아이콘"></a></li>
+    	<li><a href="#"><img src="../images/icon/sns_youtube.png" width="30" height="30" alt="유튜브 아이콘"></a></li>
+    	<li><a href="#"><img src="../images/icon/sns_instagram.png" width="30" height="30" alt="인스타그램 아이콘"></a></li>
+    	<li><a href="#"><img src="../images/icon/sns_twitter.png" width="30" height="30" alt="트위터 아이콘"></a></li>
+    </ul>
+	<p>Copyright &copy; copy2015 BY Sanghafarm CO ,LTD. ALL RESERVED</p>
+ </footer>
+ </body>
+</html>

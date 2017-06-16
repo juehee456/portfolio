@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, intinial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon/favicon.ico"> 
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="css/swiper.min.css"> 
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>VESPA KOREA</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="js/css3-mediaqueries.js"></script>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript">
+
+
+	$(window).load(function(){
+		new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+			autoplay:3000,
+			loop: true,
+	});
+	
+		 
+   $('.bxslider').bxSlider({
+   minSlides: 3,
+   maxSlides: 6,
+   slideWidth: 1172,
+   slideMargin: 0,
+   controls: true,
+   nextText: 'next',
+   prevText: 'prev',
+   pager: false
+   });
+   
+   $('.bxslider_m').bxSlider({
+   minSlides: 1,
+   maxSlides: 6,
+   slideWidth: 640,
+   slideMargin: 0,
+   controls: true,
+   nextText: 'next',
+   prevText: 'prev',
+   pager: false
+   });
+   
+   
+
+
+ 
+   });
+ </script>
+
+ </head>
+ 
+ 
+ <body>
+  
+   <header>
+     <div class="header_wrap">
+	  <h1><a href="index.html"><img src="images/logo_2.png" alt=""></a></h1>
+	  <nav>
+	   <ul>
+	   	<li><a href="#">SPRINT</a></li>
+	   	<li><a href="#">SPRINT 125</a></li>
+	   	<li><a href="#">SPRINT 150</a></li>
+	   	<li><a href="#">GALLARY</a></li>
+	   	<li><a href="#">NEWS</a></li>
+	   </ul>
+	 </nav>
+	  <div class="m_menu"><a href="#"><img src="images/menu.png" alt=""></a></div> 
+	 </div>
+   </header>
+   
+   
+   <div id="main_container">
+    <section class="slide_container">
+				<div class="swiper-container">
+	         		<div class="swiper-wrapper">
+             			<div class="swiper-slide">
+             				<img src="images/slide1.jpg" alt="" class="slide_p"><img src="images/slide1_t.jpg" alt="" class="slide_t"><img src="images/slide1_m.jpg" alt="" class="slide_m">
+             			</div>
+             			<div class="swiper-slide">
+             				<img src="images/slide2.jpg" alt="" class="slide_p"><img src="images/slide2_t.jpg" alt="" class="slide_t"><img src="images/slide2_m.jpg" alt="" class="slide_m">
+             			</div>
+             			<div class="swiper-slide">
+             				<img src="images/slide3.jpg" alt="" class="slide_p"><img src="images/slide3_t.jpg" alt="" class="slide_t"><img src="images/slide3_m.jpg" alt="" class="slide_m">
+             			</div>
+         			</div>
+     			</div>
+		
+		</section>
+      
+   
+   </div>
+   <div id="content2">
+     <h2>SPRINT GALLERY</h2>
+	 <div class="photo_gallery">
+	   
+	   <ul>
+		   <li>
+		     <a href="images/thumb-04.jpg" data-fancybox="images"><img src="images/content1_1.jpg" alt=""></a>
+		   </li>
+		    <li>
+		     <a href="images/big-04.jpg" data-fancybox="images"><img src="images/content1_2.jpg"  alt=""></a>
+		   </li>
+		    <li>
+		     <a href="images/asdfas.jpg" data-fancybox="images"><img src="images/content1_3.jpg"  alt=""></a>
+		   </li>
+		    <li>
+		    <a href="images/big-03.jpg" data-fancybox="images"><img src="images/content1_4.jpg"  alt=""></a>
+		   </li>
+		    <li>
+		    <a href="images/big-0sdfsd3.jpg" data-fancybox="images"><img src="images/content1_5.jpg" alt=""></a>
+		   </li>
+		    <li>
+		     <a href="images/thumb-07.jpg" data-fancybox="images"><img src="images/content1_6.jpg" alt=""></a>
+		   </li>
+       </ul>
+	 </div>
+   </div>
+   <div id="content3">
+   <h2>SPRINT ACCESSORY</h2>
+  <ul class="bxslider">
+  <li><img src="images/bx1.jpg" /></li>
+  <li><img src="images/bx2.jpg" /></li>
+  <li><img src="images/bx3.jpg" /></li>
+  <li><img src="images/bx4.jpg" /></li>
+  <li><img src="images/bx5.jpg" /></li>
+  <li><img src="images/bx6.jpg" /></li>
+  </ul>
+  <ul class="bxslider_m">
+  <li><img src="images/bx1.jpg" /></li>
+  <li><img src="images/bx2.jpg" /></li>
+  <li><img src="images/bx3.jpg" /></li>
+  <li><img src="images/bx4.jpg" /></li>
+  <li><img src="images/bx5.jpg" /></li>
+  <li><img src="images/bx6.jpg" /></li>
+  </ul>
+
+  </div>    
+  <div id="content4">
+   
+   <img src="images/content4_p.jpg" alt="" class="content4_p">
+   <img src="images/content4_t.jpg" alt="" class="content4_t">
+   <img src="images/content4_m.jpg" alt="" class="content4_m">
+  
+  </div>
+  
+   <div id="content5">
+     <h2>NEWS</h2>
+     <div class="content5_wrap">
+	 <div class="news1"><img src="images/content4_1.jpg" alt=""><div><h3>VESPA DAEJEON Dealer & Service</h3><p>베스파 대전 전시장 그리고 서비스 센터가 오픈하였습니다.</p></div></div>
+	 <div class="news2"><img src="images/content4_2.jpg" alt=""><div><h3>VESPA HOME PAGE OPEN</h3><p>VESPA KOREA 홈페이지가 오픈하엿습니다</p></div></div>
+	 <div class="news3"><img src="images/content4_3.jpg" alt=""><div><h3>VESPA GWANGJU Dealer & Service</h3><p>VESPA 광주점이 오픈했습니다.</p></div></div>
+    </div>
+   
+   </div>
+   
+   
+   
+   <footer>
+   <ul>
+   	<li><a href="#"><img src="images/icon/facebook.png" alt=""></a></li>
+   	<li><a href="#"><img src="images/icon/instagram.png" alt=""></a></li>
+   	<li><a href="#"><img src="images/icon/youtube.png" alt=""></a></li>
+   	<li><a href="#"><img src="images/icon/twitter.png" alt=""></a></li>
+   	<li><a href="#"><img src="images/icon/googleplus.png" alt=""></a></li>
+   	<li><a href="#"><img src="images/icon/pinterest.png" alt=""></a></li>
+   </ul>
+   <p>&copy; 2016 PIAGGIO  C.S.P.A</p>
+  </footer>
+
+ 
+ 
+
+ </body>
+
+
+</html>

@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="함주희">
+  <meta name="Description" content="함주희 포트폴리오"> 
+  <title>필라델피아 크림치즈</title>
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
+  <script type="text/javascript" src="js/jquery.tubular.1.0.js"></script>
+  <script type="text/javascript">
+	
+	$(document).ready(function(){	
+	  var pageNum=1;
+	   var wheelChk=true;
+	    $('html,body').on ('mousewheel',function(event){
+			event.preventDefault();
+			if(wheelChk){
+				wheelChk=false;
+				if(event.deltaY<0){
+						pageNum++;
+						if(pageNum>=5){ pageNum=5;}
+				}else{
+					pageNum--;
+					if(pageNum<=1){ pageNum=1;}
+				}
+			}
+			$('html,body').stop().animate({scrollTop:$('#content'+pageNum).offset().top},600,function(){ wheelChk=true; });
+		 
+		});
+	   
+
+
+	   
+	   $('.light_cheese,.bagel').stop().delay(300).fadeIn(700);
+	   $('.coffee').stop().delay(300).fadeIn(1100);
+	   $('.cutting').stop().delay(600).fadeIn(1000);
+	   $('.creamcheese').stop().delay(700).fadeIn(1200);
+       $('.text').stop().delay(1000).fadeIn(1700);
+	   
+	   
+	   
+	   $('.menu1 a').addClass('active');
+	   $(window).scroll(function(){
+       var i=$(document).scrollTop();
+	   var con1= $('#content1').height();
+	   var con2= $('#content2').height();
+	   var con3= $('#content3').height();
+	   var con4= $('#content4').height();
+	   if(i==0){$('.menu1 a').addClass('active');}else{$('.menu1 a').removeClass('active');}
+	   if(i>1000){$('.creamcheese').stop().animate({opacity:0},70); }
+	   if(i<1001){$('.creamcheese').stop().animate({opacity:1},70); }
+	   if(i>=1000&&i<2000){$('.menu2 a').addClass('active');}else{$('.menu2 a').removeClass('active');}
+       if(i>=2000&&i<3000){$('.menu3 a').addClass('active');}else{$('.menu3 a').removeClass('active');}
+	   if(i>=3000&&i<4000){$('.menu4 a').addClass('active');}else{$('.menu4 a').removeClass('active');}
+	   if(i>=4000&&i<5000){$('.menu5 a').addClass('active');}else{$('.menu5 a').removeClass('active');}
+	   if(i>1700&&i<2500){$('#content3 > .content3_wrap > img:first-child').animate({top:'0',opacity:1},300);
+	   $('#content3 > .content3_wrap > img:nth-child(2)').animate({top:'0',opacity:1},500);
+	   $('#content3 > .content3_wrap > img:nth-child(3)').animate({top:'0',opacity:1},700);
+	   $('#content3 > .content3_wrap > img:nth-child(4)').animate({top:'0',opacity:1},900);
+	   }else{
+		   $('#content3 > .content3_wrap > img').stop().css('top','-180px');
+	       $('#content3 > .content3_wrap > img').stop().css('opacity','0');}
+
+	  
+      	var con4H= con1+con2+con3;
+		var con5H= con1+con2+con3+con4;
+		if(i>con4H-200 && i<con5H){
+			$('#content4 iframe').attr('src','https://www.youtube.com/embed/K-R5HKlPdU0?showinfo=0;version=2&autoplay=1&loop=1&wmode=opaque')
+		}else{
+			$('#content4 iframe').attr('src','https://www.youtube.com/embed/K-R5HKlPdU0?showinfo=0;version=2&wmode=opaque')
+		}
+	 });
+	});
+ 
+  </script>
+
+ </head>
+ <body>
+  <div id="wrap">
+  <div id="menu">
+   <h1><a href="#"><img src="images/logo.png" alt="필라델피아 크림 치즈 로고"></a></h1>
+    <ul>
+    	<li class="menu1"><a href="index.html#content1">MAIN</a></li>
+    	<li class="menu2"><a href="index.html#content2">BRAND</a></li>
+    	<li class="menu3"><a href="index.html#content3">PRODUCT</a></li>
+		<li class="menu4"><a href="index.html#content4">FILM</a></li>
+    	<li class="menu5"><a href="index.html#content5">RECIPE</a></li>
+    </ul>	
+  
+  </div>
+  <div id="content1">
+    
+	<img src="images/creamcheese_or.png" alt="필라델피아크림치즈" class="creamcheese">
+	
+	<img src="images/butterknife.png" alt="버터나이프"class="knife">
+	<img src="images/bagel.png" alt="베이글" class="bagel">
+	<img src="images/plate.png" alt="흰 접시" class="plate">
+	<img src="images/coffee.png" alt="커피가 든 커피잔" class="coffee">
+	<img src="images/bamboo-cutting-board.png" alt="" class="cutting">
+	<img src="images/butter.png" alt="도마위에 식빵" class="butter" >
+	<img src="images/content1_text.png" alt="필라델피아크림치즈 영문" class="text">
+	<img src="images/lightcheese.png" alt="작은 접시에 담긴 크림치즈" class="light_cheese">
+  </div>
+
+  <div id="content2">
+    <div><img src="images/content2_text.png" alt="필라델피아 크림치즈는 베이글 빵 크래커에 발라먹는 부드럽고 담백한 크림치즈입니다. 버터나 마가린에 비해 칼로리가 적어 부담없이 즐길 수 있습니다."></div>
+     </div>
+  
+  <div id="content3">  
+   <h2><img src="images/content3_h2.png" alt="4가지 맛의 필라델피아 크림치즈를 즐겨보세요"></h2>	
+   <div class="content3_wrap">
+    <img src="images/product1.png" alt="필라델피아 크림치즈 오리지날">
+    <img src="images/product2.png" alt="필라델피아 크림치즈 딸기맛">
+    <img src="images/product3.png" alt="필라델피아 크림치즈 파인애플맛">
+    <img src="images/product4.png" alt="필라델피아 크림치즈 마늘맛">
+   </div>
+  </div>
+  
+  <div id="content4">
+   <div class="embed-container">
+	<iframe width="450" height="255" src="https://www.youtube.com/embed/K-R5HKlPdU0?showinfo=0;version=2&autoplay=1&loop=1&wmode=opaque" frameborder="0" value = "readonly" allowfullscreen
+    value = "readonly" frameborder="0" allowfullscreen"style="display:block;"></iframe>
+  </div>	
+  </div>
+  <div id="content5">
+    <h2><img src="images/content5_h2.jpg" alt=""></h2>
+    <div class="recipe_box">
+    	<div><a href="#"><div class="imgbox"><img src="images/recipe1.jpg" alt="크림치즈 감자 통구이"></div><p>크림치즈 감자 통구이</p></a></div>
+    	<div><a href="#"><div class="imgbox"><img src="images/recipe2.jpg" alt="크림치즈 호두 아이스크림"></div><p>크림치즈 호두 아이스크림</p></a></div>
+		<div><a href="#"><div class="imgbox"><img src="images/recipe3.jpg" alt="딸기 크림치즈 피자"></div><p>딸기 크림치즈 피자</p></a></div>
+		<div><a href="#"><div class="imgbox"><img src="images/recipe4.jpg" alt="하바나 콘"></div><p>하바나 콘</p></a></div>
+		<div><a href="#"><div class="imgbox"><img src="images/recipe5.jpg" alt="딸기크림치즈 과일 샌드위치"></div><p>딸기크림치즈 과일 샌드위치</p></a></div>
+		<div><a href="#"><div class="imgbox"><img src="images/recipe9.jpg" alt="크림치즈 바게트 토스트"></div><p>크림치즈 바게트 토스트</p></a></div>
+		<div><a href="#"><div class="imgbox"><img src="images/recipe7.jpg" alt="크림치즈 스파게티"></div><p>크림치즈 스파게티</p></a></div>
+		<div><a href="#"><div class="imgbox"><img src="images/recipe8.jpg" alt="블루베리 레어치즈 케익"></div><p>블루베리 레어치즈 케익</p></a></div>
+    </div>	
+  </div>	
+
+ </div>
+ </body>
+</html>

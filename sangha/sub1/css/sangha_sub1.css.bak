@@ -1,0 +1,55 @@
+   section,body,header,li,ul,a,h1,h2,div,img,p{margin:0px; padding:0px;}
+   img{border:none;}
+   
+   #container
+   { width:100%; height:4000px;
+    }
+   #container>h2{padding:150px 0px 0px 250px;}
+
+ ul{list-style:none;}
+ a{text-decoration:none; color:#ffffff;}
+
+
+#container>.sub1_0{
+width:100%; height:1000px; overflow:hidden;
+background:url(../../images/sub1_bg0.jpg) 100% no-repeat;
+background-position:0px -100px;
+background-size:100% 1100px;
+}
+
+#container>.sub1_0>h2{width:658px; height:289px; margin:15% auto 200px auto; display:none;}
+
+
+#container>.sub1_1{
+width:100%; height:1000px; text-align:center;
+background:url(../../images/sub1_bg1.jpg) 100% no-repeat;
+background-position:center top;
+background-size:100% 1000px;
+}
+#container>.sub1_1>img{padding-top:13%; display:none;}
+#container>.sub1_2{
+width:100%; height:1000px;text-align:center;
+background:url(../../images/sub1_bg2.jpg) 100% no-repeat;
+background-position:center top;
+background-size:100% 1000px;
+}
+#container>.sub1_2>img{padding-top:13%;display:none;}
+
+#container>.sub1_3{
+width:100%; height:1000px; text-align:center;
+background:url(../../images/sub1_bg3.jpg) 100% no-repeat;
+background-position:center top;
+background-size:100% 1000px;
+}
+#container>.sub1_3>img{padding-top:10%;display:none;} 
+ footer{ position:absolute; width:100%; height:100px; top:3900px; left:0px; background:rgba(255,255,255,0.5); z-index:5; text-align:center;}
+ footer>ul>li{float:left; margin-left:15px; margin-top:20px;}
+ footer>ul>li:first-child{margin-left:0px;}
+ footer>ul{display:block; width:165px; height:65px; margin:0px auto;}
+ footer>p{color:#472600; font-size:13px;}
+
+@font-face{
+font-family:"Daum_Regular";
+src:url(Daum_Regular.woff);
+src:local(※), url(../font/Daum_Regular.woff) format(‘woff’);
+}

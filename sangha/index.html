@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>sangha</title> 
+  <link rel="shortcut icon" href="images/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
+  <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="../js/jquery.tubular.1.0.js"></script>
+  <script type="text/javascript"> 
+ 
+  $(document).ready(function(){
+  
+  
+  $('header>nav>ul>li').on('mouseenter',function(){
+  $('header>.nav_bg, header>nav>ul>li>ul>li>a').stop().fadeIn();
+  
+  });
+   $('header>nav>ul>li,header>.nav_bg').on('mouseleave',function(){
+  $('header>.nav_bg,header>nav>ul>li>ul>li>a').stop().fadeOut();
+  });
+
+
+
+ $('#main_3>.main_3_3>a').on('click',function(event){
+ event.preventDefault();
+ });  
+ 
+	
+
+    var pageNum=1;
+	   var wheelChk=true;
+	    $('html,body').on ('mousewheel',function(event){
+			event.preventDefault();
+			if(wheelChk){
+				wheelChk=false;
+				if(event.deltaY<0){
+						pageNum++;
+						if(pageNum>=3){ pageNum=3;}
+				}else{
+					pageNum--;
+					if(pageNum<=1){ pageNum=1;}
+				}
+			}
+			$('html,body').stop().animate({scrollTop:$('#main_'+pageNum).offset().top},800,function(){ wheelChk=true; });
+		});
+    
+
+  $('#main_2>.iconbox>ul>li').css('top','-80px');
+  $('#main_2>.iconbox>ul>li').css('opacity','0');
+  $('#main_3>div').css('top','-80px');
+  $('#main_3>div').css('opacity','0');
+  
+  
+   $(window).scroll(function(){
+   var i=$(document).scrollTop();
+	if(i>=800 && i<=1100){
+    $('#main_2>p').stop().delay(80).fadeIn();
+	$('#main_2>.iconbox>ul>.icon1').stop().animate({top:'0px',opacity:1},300,'linear');
+	$('#main_2>.iconbox>ul>.icon2').stop().animate({top:'0px',opacity:1},500,'linear');
+	$('#main_2>.iconbox>ul>.icon3').stop().animate({top:'0px',opacity:1},700,'linear');
+	}else{
+	$('#main_2>.iconbox>ul>li').stop().css('top','-80px');
+	$('#main_2>.iconbox>ul>li').stop().css('opacity','0');
+    $('#main_2>p').stop().hide();
+	}
+    if(i>=1700 && i<=2000){
+	$('#main_3>.main_3_1').stop().animate({top:'0px',opacity:1},300,'linear');
+	$('#main_3>.main_3_2').stop().animate({top:'0px',opacity:1},500,'linear');
+	$('#main_3>.main_3_3').stop().animate({top:'0px',opacity:1},700,'linear');
+	}else{
+	$('#main_3>div').css('top','-80px');
+    $('#main_3>div').css('opacity','0');}
+   });
+  });
+  function procedure() {
+
+ cw=screen.availWidth;     //화면 넓이
+ ch=screen.availHeight;    //화면 높이
+
+ sw=600;    //띄울 창의 넓이
+ sh=600;    //띄울 창의 높이
+
+ ml=(cw-sw)/2;        //가운데 띄우기위한 창의 x위치
+ mt=(ch-sh)/2;         //가운데 띄우기위한 창의 y위치
+
+ test=window.open('main3.html','tst','width='+sw+',height='+sh+',top='+mt+',left='+ml+',resizable=no,scrollbars=yes');
+ }
+ </script>
+ </head>
+
+ <body>
+ <header>
+  <h1><a href="index.html"><img src="images/logo.png" alt="상하목장로고"></a></h1>
+  <nav>
+  <ul>
+   <li><a href="sub1/sub1.html">ABOUT</a>
+     <ul>
+     	<li><a href="sub1/sub1.html">상하목장의 철학</a></li>
+     	<li><a href="sub2/sub2.html">상하목장의 원칙</a></li>
+		<li><a href="sub3/sub3.html">상하목장의 히스토리</a></li>
+     </ul>
+   </li>
+   <li><a href="sub4/sub4.html">ORGANIC CIRCLE</a>
+      <ul>
+     	<li><a href="sub4/sub4.html">오가닉 써클 캠페인</a></li>
+     	<li><a href="sub5/sub5.html">캠페인 참여하기</a></li>
+	  </ul>  
+   </li>
+   <li><a href="sub7/sub7.html">PRODUCT</a>
+      <ul>
+      	<li><a href="sub7/sub7.html">저온살균 제품</a></li>
+      	<li><a href="sub7/sub7.html">유기농 제품</a></li>
+      </ul>
+   </li>
+   <li><a href="sub8/sub8.html">STORE</a>
+      <ul>
+      	<li><a href="sub8/sub8.html">sangha's<br>milk ice cream</a></li>
+      	<li><a href="sub9/sub9.html">매장 안내</a></li>
+      </ul>  
+   </li>
+   <li><a href="sub10/sub10.html">NOTICE</a>
+      <ul>
+      	<li><a href="sub10/sub10.html">뉴스</a></li>
+      	<li><a href="sub11/sub11.html">이벤트</a></li>
+      </ul>  
+   </li>
+  </ul>	
+  </nav>
+  <div class="nav_bg"></div>
+    
+   </header>
+ <section id="main_1">
+   <div class="embed-container">
+	<iframe width="450" height="255" src="https://www.youtube.com/embed/AGxpUm2d2-k?autoplay=1&&loop=1" frameborder="0" allowfullscreen style="display:block;"  ></iframe>
+  </div>
+
+ </section>
+ <section id="main_2">
+ <h2>상하목장의 신념</h2>
+    <p><img src="images/main_2_text.png" alt="상하목장의 착한 혁명"></p>
+  <div class="iconbox">
+   <ul>
+   	<li class="icon1"><a href="sub1.html"><img src="images/icon/sprout3wh.png" width="140" height="140" alt="상하목장의 원칙"><p>상하목장의 원칙</p></a></li>
+   	<li class="icon2"><a href="sub2.html"><img src="images/icon/recyclingwh.png" width="140" height="140" alt="상하목장의 철학"><p>상하목장의 철학</p></a></li>
+   	<li class="icon3"><a href="sub3.html"><img src="images/icon/earthwh.png" width="140" height="140" alt="상하목장의 히스토리"><p>상하목장의 히스토리</p></a></li>
+   </ul>
+  </div>
+ </section>
+ <section id="main_3">
+ 
+  <h2>유기농 초지 계산</h2>
+  
+  <div class="main_3_1"><img src="images/main_3_text1.png"  class="main_3_img1" alt="유기농 초지 설명"></div>
+  
+  <div class="main_3_2"><img src="images/main_3_text2.png"  class="main_3_img2" alt="젖소아이콘"></div>
+  
+  <div class="main_3_3"><a href="#" onclick="procedure();"><img src="images/main_3_text3.png"  class="main_3_img3" alt="초지 계산하기 버튼"></a></div>
+ 
+ </section>
+ <footer>
+    <ul>
+    	<li><a href="https://www.facebook.com/sanghafarm"><img src="images/icon/sns_facebook.png" width="30" height="30" alt="페이스북 아이콘"></a></li>
+    	<li><a href="https://www.youtube.com/user/maeili2mo"><img src="images/icon/sns_youtube.png" width="30" height="30" alt="유튜브 아이콘"></a></li>
+    	<li><a href="#"><img src="images/icon/sns_instagram.png" width="30" height="30" alt="인스타그램 아이콘"></a></li>
+    	<li><a href="https://mobile.twitter.com/freshmaeil"><img src="images/icon/sns_twitter.png" width="30" height="30" alt="트위터 아이콘"></a></li>
+    </ul>
+	<p>Copyright &copy; copy2015 BY Sanghafarm CO ,LTD. ALL RESERVED</p>
+ </footer>
+ </body>
+</html>

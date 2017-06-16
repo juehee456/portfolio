@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta http-equiv="X-UA-Compatible" content="IE=9"> 
+<meta http-equiv="X-UA-Compatible" content="IE=8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=7"> 
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"> 
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> 
+<link rel="stylesheet" type="text/css" href="css/reset_2.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/responsiveCarousel.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/jquery.countdown.js"></script>
+<script src="../js/html5shiv.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+   $(window).scroll(function(){
+     var scrollTopNum=$(document).scrollTop();
+	 //console.log(scrollTopNum);
+	 if(scrollTopNum>=1000){$('#side_menu').stop().show();}else{$('#side_menu').stop().hide();}
+	 $('#side_menu').stop().animate({top:scrollTopNum+80}, 700, 'easeOutCubic');
+	 
+   });
+   $('a').on('click',function(event){
+   event.preventDefault();
+  });
+  jQuery(document).ready(function(initCarousel){
+	$('.crsl-items').carousel({overflow: true, visible: 4, itemMinWidth: 300, itemMargin: 10 });
+  
+
+  });
+  
+  
+   
+    $('.countdown').countdown({
+        date: "July 4, 2017 18:00:00"
+    });
+	$('.slideup').stop().on('click',function(){
+	$('.countdown').stop().animate({top:'-60'},100);
+    $('.slideup').stop().hide();
+	
+	});
+
+  });
+
+
+
+ </script>
+ 
+  </head>
+
+ <body>
+ 
+<!----------------------------------content1------start----------------------------->
+ 
+ <div id="videobox">
+  <video src="video/mainbg.mp4" autoplay loop></video>
+ </div> 
+ <div id="content1">	
+  <div class="countdown"></div>
+  <a href="#" class="slideup"><img src="images/chevron-up.png" alt="흰색 상향 화살표"></a>
+   <div class="wrap"> 
+	<h1>HIPHOP<span>PLAYA</span></h1>
+    <p>WEBZIN <span>2017.MAY</span> Vol.32</p>
+    <div class="learn"><a href="#">LEARN MORE</a></div>
+	<div class="scroll">|<br><span>scroll<span></div>
+   </div>
+ </div>
+
+<!----------------------------------content1------end----------------------------->
+
+<!----------------------------------content2------start----------------------------->
+
+<div id="content2">
+ <h2>MONTHLY NEWS</h2>							
+ <div class="menubox">
+   		<div class="box1"><a href="#"><img src="images/box1hover.jpg" alt=""></a></div>
+   		<div class="box2"><a href="#"><img src="images/box2hover.jpg" alt=""></a></div>
+   		<div class="box3"><a href="#"><img src="images/box3hover.jpg" alt=""></a></div>
+   		<div class="box4"><a href="#"><img src="images/box4hover.jpg" alt=""></a></div>
+   		<div class="box5"><a href="#"><img src="images/box5hover.jpg" alt=""></a></div>
+   		<div class="box6"><a href="#"><img src="images/box6hover.jpg" alt=""></a></div>
+   		<div class="box7"><a href="#"><img src="images/box7hover.jpg" alt=""></a></div>	
+		  
+</div>
+</div>
+
+<!----------------------------------content2------end----------------------------->
+
+
+<!----------------------------------content3------start----------------------------->
+
+<div id="content3">
+  <h2>COLUMN</h2>
+  
+   <div class="crsl-items" data-crsl='{ "speed":2000, "autoRotate": 4000 }'data-navigation="NAV-ID">
+   <div id="NAV-ID" class="crsl-nav">
+	<a href="#" class="previous">Prev</a>
+	<a href="#" class="next">Next</a>
+   </div>
+
+
+  <div class="crsl-wrap">
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide1.jpg"></a>
+		</figure>
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide2.jpg"></a>
+		</figure>
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide3.jpg"></a>
+		</figure>
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide4.jpg"></a>
+		</figure>
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide5.jpg"></a>
+		</figure>
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide7.jpg"></a>
+		</figure>
+		<figure class="crsl-item">
+			<a href="#"><img src="images/slide6.jpg"></a>
+		</figure>
+  </div>
+
+
+
+</div>
+ 
+</div>
+
+<!----------------------------------content3------end----------------------------->
+
+<!----------------------------------content4------start----------------------------->
+
+<div id="content4">
+ <div class="wrap">
+	 <h2>EVENT</h2> 
+	 <a href="#"><img src="images/event1.jpg" alt=""></a>
+	 <a href="#"><img src="images/event2.jpg" alt=""></a>
+ </div>
+</div>
+<!----------------------------------content4------end----------------------------->
+ 
+<!---------------------------------side_menu----start-----------------------------> 
+ <div id="side_menu"> 
+   <h3>구독정보<span></span></h3>
+   <div><a href="#"><img src="images/email.png" alt="편지봉투아이콘"><p>정기구독</p></a></div>
+   <div><a href="#"><img src="images/book.png" alt="책아이콘"><p>과월호</p></a></div>
+  
+ </div>
+ 
+ <!---------------------------------side_menu----end-----------------------------> 
+ 
+ <!-----------------------------------footer-----start---------------------------->
+ <footer>
+  <p>Copyright &copy; hiphopplaya All rights Reserved. </p>
+   
+ </footer>
+  <!-----------------------------------footer-----end---------------------------->
+ </body>
+</html>

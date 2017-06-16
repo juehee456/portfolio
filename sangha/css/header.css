@@ -1,0 +1,20 @@
+header{position:absolute; width:100%; height:110px; top:0px; left:0px; background:rgba(255,255,255,0.5); z-index:100; font-family:"Daum_Regular"; }
+ header>h1{position:absolute; width:225px; height:60px; left:50%; top:5px; margin-left:-112px; z-index:6;}
+ header>nav>ul{position:absolute; width:800px; height:30px; top:75px; left:50%; margin-left:-400px;  color:#472600; z-index:20; } 
+ header>nav>ul>li{float:left; width:20%; text-align:center;}
+ header>nav>ul>li>a{color:#472600; font-size:14px;}
+ header>nav>ul>li>a:hover{border-bottom:1px solid rgba(71,38,0,0.6);}
+ 
+ 
+ header>nav>ul>li>ul{width:100%; height:100px; margin-top:5px;}
+ header>nav>ul>li>ul>li{padding-top:15px;}
+ header>nav>ul>li>ul>li>a{display:none; color:#472600; padding-bottom:3px; font-size:12px;}
+ header>nav>ul>li>ul>li>a:hover{border-bottom:1px solid rgba(71,38,0,0.6);}
+ header>.nav_bg{display:none;position:absolute; top:110px; left:0px; width:100%; height:130px;background:rgba(255,255,255,0.5); }
+
+
+@font-face{
+font-family:"Daum_Regular";
+src:url(../../font/Daum_Regular.woff);
+src:local(¡Ø), url(../../font/Daum_Regular.woff) format(¡®woff¡¯);
+}
