@@ -68,7 +68,7 @@
 		   $('#content3 > .content3_wrap > img').stop().css('top','-180px');
 	       $('#content3 > .content3_wrap > img').stop().css('opacity','0');}
 
-	   });
+	  
       	var con4H= con1+con2+con3;
 		var con5H= con1+con2+con3+con4;
 		if(i>con4H-200 && i<con5H){
@@ -76,7 +76,7 @@
 		}else{
 			$('#content4 iframe').attr('src','https://www.youtube.com/embed/K-R5HKlPdU0?showinfo=0;version=2&wmode=opaque')
 		}
-	
+	 });
 	});
  
   </script>

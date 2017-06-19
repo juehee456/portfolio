@@ -15,7 +15,7 @@
   #header .top_header{width:100%; height:35px; position:absolute; top:0px; left:0px; background:#3c3c3c;  }
   #header .top_header_wrap{width:1200px; height:35px; margin:0 auto;}
   #header .top_header_wrap  > ul{width:147px; height:35px; float:right;}
-  #header .top_header_wrap > ul > li{float:left; margin: 9px 0px 10px 10px;font-weight:200;}
+  #header .top_header_wrap > ul > li{float:left; margin: 9px 0px 10px 10px;font-weight:300;}
   #header .top_header_wrap a{ color:#818181;}
   #header  .bottom_header{width:1200px; height:100px; position:absolute; top:35px; left:50%; margin-left:-600px; font-size:18px; z-index:4;}
   #header  .bottom_header > ul{width:885px; height:100px;  margin:40px 0px 0px 315px; text-align:center;}

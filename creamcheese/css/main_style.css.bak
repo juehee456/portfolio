@@ -1,5 +1,10 @@
  
 @import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@font-face{
+font-family:"DINPro";
+src:url(../../font/DINPro-Bold.woff);
+src:local(¡Ø), url(../../font/DINPro-Bold.woff) format(¡®woff¡¯);
+}
 
 
    
