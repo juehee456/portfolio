@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
    <title>잎사귀치과</title>
-  
+  <link rel='stylesheet' href='http://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css'>
   <link rel="stylesheet" type="text/css" href="../css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
   <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
